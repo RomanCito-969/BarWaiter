@@ -1,0 +1,34 @@
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ComandaModal">
+  Enviar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ComandaModal" tabindex="-1" aria-labelledby="ComandaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ComandaModalLabel">Comanda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let producto of datosRecibidos">
+              <td>{{ producto.nombre }}</td>
+              <td>{{ producto.cantidad }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer" *ngIf="datosRecibidos && datosRecibidos.length > 0">
+        <button type="button" class="btn btn-light" (click)="generarPDF()">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
