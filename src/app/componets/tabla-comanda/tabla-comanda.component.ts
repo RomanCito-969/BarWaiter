@@ -45,6 +45,8 @@ export class TablaComandaComponent {
 
       // Guardar el PDF
       doc.save('tabla_comandas.pdf');
+      // Vaciar el array datosRecibidos
+      this.datosRecibidos = [];
     };
   }
 }
