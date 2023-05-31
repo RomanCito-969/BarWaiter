@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-end m-3">
+  <select class="form-select col-sm-8" aria-label="Default select example" [(ngModel)]="selectedItem">
+    <option *ngFor="let objeto of listaObjetos" [value]="objeto.id">{{ objeto.nombre }}</option>
+  </select>
+  <button type="button" class="btn btn-danger" (click)="borrarProducto()">Eliminar</button>
+</div>

@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ObjectComanda } from 'src/app/ObjectComanda';
+import { ObjectComanda } from 'src/app/model/ObjectComanda';
 import { ObjectData } from 'src/app/model/ObjectData';
 import { ComandaService } from 'src/app/service/comanda.service';
 

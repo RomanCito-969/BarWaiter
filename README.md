@@ -11,6 +11,7 @@ A continuación, se detalla la estructura de carpetas y archivos principales.
 - **src**: Carpeta principal del proyecto.
   - **app**: Carpeta que contiene los componentes y servicios del proyecto.
     - **component**:
+      - **boton-borrar**: Carpeta que contiene el componente BotonBorrar.
       - **boton-enviar**: Carpeta que contiene el componente BotonEnviar.
       - **card**: Carpeta que contiene el componente Card.
       - **footer**: Carpeta que contiene el componente Footer.

@@ -2,11 +2,13 @@
   <div class="card-header row">
     <h5 class="card-title">{{ objeto.nombre }}</h5>
   </div>
-  <img [src]="objeto.imagen" class="card-img-top imagen" alt="Imagen de {{objeto.nombre}}">
+  <div class="image d-flex justify-content-center">
+    <img [src]="objeto.imagen" class="card-img-top imagen" alt="Imagen de {{objeto.nombre}}">
+  </div>
   <div class=" card-body">
     <input type="hidden" [value]="objeto.id" />
     <p class="card-text">{{ objeto.descripcion }}</p>
-    <p class="card-text fw-bold">PRECIO: {{ objeto.precio }}</p>
+    <p class="card-text fw-bold">PRECIO: {{ objeto.precio }} €</p>
   </div>
   <div class="card-footer d-flex justify-content-center">
     <a class="btn" (click)="enviarComanda()">Añadir</a>

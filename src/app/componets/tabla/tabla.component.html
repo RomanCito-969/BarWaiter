@@ -1,8 +1,15 @@
 <div class="container my-5">
   <div></div>
   <div *ngIf="error" class="alert alert-info my-2">{{ mensajeError }}</div>
-  <div class="d-flex justify-content-end">
-    <app-boton-enviar></app-boton-enviar>
+  <div class="row">
+    <div class="col">
+      <app-boton-enviar></app-boton-enviar>
+    </div>
+    <div class="col">
+      <app-boton-borrar [listaObjetos]=" listaObjetos" *ngIf="listaObjetos && listaObjetos.length > 0">
+      </app-boton-borrar>
+    </div>
+
   </div>
   <div class="row">
     <div class="col-md-3 col-sm-6" *ngFor="let objeto of listaObjetos">

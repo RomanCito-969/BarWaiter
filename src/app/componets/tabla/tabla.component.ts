@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../service/api.service';
 import { ObjectData } from '../../model/ObjectData';
 import { environment } from 'src/environments/environment';
-import { ObjectComanda } from 'src/app/ObjectComanda';
+import { ObjectComanda } from 'src/app/model/ObjectComanda';
 import { ComandaService } from 'src/app/service/comanda.service';
 
 @Component({

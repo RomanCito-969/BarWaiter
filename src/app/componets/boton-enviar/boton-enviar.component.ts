@@ -12,6 +12,8 @@ import { environment } from 'src/environments/environment';
 export class BotonEnviarComponent {
   uploadForm: FormGroup;
   selectedFile!: File;
+  isLoadingStart: boolean = false;
+  isLoadingEnd: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -54,6 +56,12 @@ export class BotonEnviarComponent {
       (error) => {
         console.error('Error al enviar el formulario:', error);
         // Manejar el error adecuadamente
+      },
+      () => {
+        this.isLoadingStart = false; // Ocultar primer spinner
+        this.isLoadingEnd = true; // Mostrar segundo spinner al finalizar la petición
+
+        this.isLoadingEnd = false; // Ocultar segundo spinner al finalizar la acción adicional
       }
     );
   }

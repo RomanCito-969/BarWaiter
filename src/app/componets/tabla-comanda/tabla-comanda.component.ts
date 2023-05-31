@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ObjectComanda } from 'src/app/ObjectComanda';
+import { ObjectComanda } from 'src/app/model/ObjectComanda';
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 

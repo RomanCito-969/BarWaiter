@@ -13,6 +13,7 @@ import { TablaComandaComponent } from './componets/tabla-comanda/tabla-comanda.c
 
 import { CardComponent } from './componets/card/card.component';
 import { HomeComponent } from './componets/home/home.component';
+import { BotonBorrarComponent } from './componets/boton-borrar/boton-borrar.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HomeComponent } from './componets/home/home.component';
     TablaComandaComponent,
     CardComponent,
     HomeComponent,
+    BotonBorrarComponent,
   ],
   imports: [
     BrowserModule,
